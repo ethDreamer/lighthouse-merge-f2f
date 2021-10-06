@@ -1,8 +1,5 @@
 ## Milestone #2: Lighthouse and Besu
 
-**WARNING: we are currently blocked on
-https://github.com/hyperledger/besu/issues/2830#issuecomment-933050977**
-
 References:
 
 - Besu merge branch: https://github.com/hyperledger/besu/tree/merge
@@ -16,8 +13,8 @@ and one for a validator client. See the per-terminal commands below.
 
 ```bash
 git clone --recursive https://github.com/hyperledger/besu
-git checkout merge
 cd besu
+git checkout merge
 ./gradlew --parallel installDist
 besu/build/install/besu/bin/besu --config-file=besu-config.toml
 ```
